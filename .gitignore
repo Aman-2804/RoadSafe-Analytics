@@ -19,4 +19,8 @@ data/raw/*.csv
 *.snappy.parquet
 *.crc
 
+# Local notes / scratch docs (do not commit)
+history.md
+QUICK_START.md
+
 

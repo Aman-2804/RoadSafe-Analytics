@@ -1,0 +1,267 @@
+resources.name,resources.schema.fields.name,resources.schema.fields.var_class,resources.schema.fields.description
+TAS_ACCIDENT,YEAR,99a. Research Content,"Year of crash. (e.g., 2019)"
+TAS_ACCIDENT,MONTH,99a. Research Content,Month of crash. (e.g. JANUARY)
+TAS_ACCIDENT,ACC_DAY_OF_WEEK,99a. Research Content,"Day of week of crash. (e.g., Thursday)"
+TAS_ACCIDENT,ACCIDENT_TIME,99a. Research Content,"Actual time of crash in military format (24-hour clock).  (e.g., 1645)"
+TAS_ACCIDENT,TIME_CATEGORY,99a. Research Content,"Time of crash in three-hour groupings (e.g., 15:00-17:59)"
+TAS_ACCIDENT,ACCIDENT_LOCATION,99a. Research Content,The numeric code that describes location where accident occurred. Intersections include junctions of intersecting highways.
+TAS_ACCIDENT,ACCIDENT_LOCATION_SHORT_DESCRIPTION,99a. Research Content,The text description that describes location where accident occurred. Intersections include junctions of intersecting highways.
+TAS_ACCIDENT,ACCIDENT_TYPE,99a. Research Content,"The numeric code that describes the severity of the crash and is hierarchical according to the following order:
+• Fatal accident - A crash that resulted in fatal injuries to one or more persons, with death occurring within 30 days of the accident.
+• Bodily Injury - A crash resulting in an injury with no fatalities.
+• Property Damage Only - Crash incident resulting in material damages to property (vehicle or non-vehicle, such as structures) with no injuries or fatalities."
+TAS_ACCIDENT,ACCIDENT_TYPE_SHORT_DESCRIPTION,99a. Research Content,"The text description that describes the severity of the crash and is hierarchical according to the following order:
+• Fatal accident - A crash that resulted in fatal injuries to one or more persons, with death occurring within 30 days of the accident.
+• Bodily Injury - A crash resulting in an injury with no fatalities.
+• Property Damage Only - Crash incident resulting in material damages to property (vehicle or non-vehicle, such as structures) with no injuries or fatalities."
+TAS_ACCIDENT,ATTEND_CODE,99a. Research Content,"The numeric code that identifies if an investigation made at scene, vehicle not removed from scene."
+TAS_ACCIDENT,ATTEND_DESC,99a. Research Content,"The text description that identifies if an investigation made at scene, vehicle not removed from scene."
+TAS_ACCIDENT,CITY_NAME,99a. Research Content,"The municipality in which the crash occurred. (e.g., VANCOUVER)"
+TAS_ACCIDENT,REGION,99a. Research Content,The ICBC region in B.C. in which the crash occurred.
+TAS_ACCIDENT,STREET_DIRECTION,99a. Research Content,"The optional prefix or suffix used to identify roads or road infrastructure components divided by compass direction, usually for block numbering."
+TAS_ACCIDENT,STREET_TYPE,99a. Research Content,"The type of street, thoroughfare or road infrastructure component where the crash occurred."
+TAS_ACCIDENT,CROSS_STREET_DIRECTION,99a. Research Content,"The optional prefix or suffix used to identify roads or road infrastructure components divided by compass direction, usually for purpose of block numbering. The direction of this attribute applies to the closest crossroad where the crash occurred."
+TAS_ACCIDENT,CROSS_STREET_TYPE,99a. Research Content,"The type of the nearest cross-street, thoroughfare or road infrastructure component where the crash occurred."
+TAS_ACCIDENT,DIAGRAM,99a. Research Content,The numeric code that describes the primary crash occurrence.
+TAS_ACCIDENT,DIAGRAM_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the primary crash occurrence.
+TAS_ACCIDENT,HIGHWAY_LOCATION,99a. Research Content,The numeric code that describes the road type on which the crash occurred.
+TAS_ACCIDENT,LOC_HIGHWAY_DESC,99a. Research Content,The text description that describes the road type on which the crash occurred.
+TAS_ACCIDENT,HIT_AND_RUN_INDICATOR,99a. Research Content,The numeric code that identifies whether a party involved in the crash failed to stop at scene.
+TAS_ACCIDENT,HIT_AND_RUN_INDICATOR_SHORT_DESCRIPTION,99a. Research Content,The text description that identifies whether a party involved in the crash failed to stop at scene.
+TAS_ACCIDENT,LAND_USE,99a. Research Content,The numeric code that describes the land use character of the location where the accident occurred.
+TAS_ACCIDENT,LAND_USE_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the land use character of the location where the accident occurred.
+TAS_ACCIDENT,LIGHT,99a. Research Content,The numeric code that describes the lighting condition at the time of the crash.
+TAS_ACCIDENT,LIGHT_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the lighting condition at the time of the crash.
+TAS_ACCIDENT,LOCATION_1_EVENT,99a. Research Content,The numeric code that describes the lighting condition at the time of the crash.
+TAS_ACCIDENT,LOCATION_1_EVENT_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the lighting condition at the time of the crash.
+TAS_ACCIDENT,ON_ROAD_FLAG,99a. Research Content,Identifies if the crash occurred on a roadway.
+TAS_ACCIDENT,PARKING_LOT_FLAG,99a. Research Content,Identifies if the crash occurred in a parking lot.
+TAS_ACCIDENT,PEDESTRIAN_ACTIVITY,99a. Research Content,"The numeric code that identifies the pedestrian’s action immediately prior to being struck, if applicable."
+TAS_ACCIDENT,PEDESTRIAN_ACTIVITY_SHORT_DESCRIPTION,99a. Research Content,"The text description that identifies the pedestrian’s action immediately prior to being struck, if applicable."
+TAS_ACCIDENT,PEDESTRIAN_LOCATION,99a. Research Content,"The numeric code that identifies the location of a pedestrian when struck, if applicable."
+TAS_ACCIDENT,PEDESTRIAN_LOCATION_SHORT_DESCRIPTION,99a. Research Content,"The text description that identifies the location of a pedestrian when struck, if applicable."
+TAS_ACCIDENT,PLACE,99a. Research Content,"The municipality in which the crash occurred. (e.g., VANCOUVER)"
+TAS_ACCIDENT,POLICE_CODE,99a. Research Content,The unique detachment identifier associated with the site of the accident.
+TAS_ACCIDENT,POLICE_DESCRIPTION,99a. Research Content,The text description of the police detachment associated with the site of the accident.
+TAS_ACCIDENT,POLICE_ZONE,99a. Research Content,Describes the regional zone within a police detachment's jurisdiction.
+TAS_ACCIDENT,ROAD_CHARACTER,99a. Research Content,The numeric code that describes the horizontal and vertical characteristics of the roadway on which the crash occurred.
+TAS_ACCIDENT,ROAD_CHARACTER_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the horizontal and vertical characteristics of the roadway on which the crash occurred.
+TAS_ACCIDENT,ROAD_CLASS,99a. Research Content,The numeric code that describes structure of roadway on which accident occurred. Parking lots are coded as 98 (Not Applicable.).
+TAS_ACCIDENT,ROAD_CLASS_SHORT_DESCRIPTION,99a. Research Content,The text description that describes structure of roadway on which accident occurred. Parking lots are coded as 98 (Not Applicable).
+TAS_ACCIDENT,ROAD_CONDITION,99a. Research Content,The numeric code that describes the roadway surface where the crash occurred.
+TAS_ACCIDENT,ROAD_CONDITION_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the roadway surface where the crash occurred.
+TAS_ACCIDENT,ROAD_SURFACE,99a. Research Content,The numeric code that describes the type of road surface where the crash occurred.
+TAS_ACCIDENT,ROAD_SURFACE_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the type of road surface where the crash occurred.
+TAS_ACCIDENT,SPEED_ADVISORY,99a. Research Content,The numeric code that describes the speed limit on section of roadway where the crash occurred.
+TAS_ACCIDENT,SPEED_ADVISORY_SHORT_DESCRIPTION,99a. Research Content,"The text description that describes the advisory speed limit on section of roadway where the crash occurred, if applicable."
+TAS_ACCIDENT,SPEED_ZONE,99a. Research Content,The numeric code that describes the speed limit on section of roadway where the crash occurred.
+TAS_ACCIDENT,SPEED_ZONE_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the speed limit on section of roadway where the crash occurred.
+TAS_ACCIDENT,TRAFFIC_CONTROL,99a. Research Content,The numeric code that describes the traffic control at the scene of the crash.
+TAS_ACCIDENT,TRAFFIC_CONTROL_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the traffic control at the scene of the crash.
+TAS_ACCIDENT,TRAFFIC_FLOW,99a. Research Content,The numeric code that describes type of traffic flow.
+TAS_ACCIDENT,TRAFFIC_FLOW_CODE_LABEL,99a. Research Content,The text description that describes type of traffic flow.
+TAS_ACCIDENT,TYPE_COLLISION_2,99a. Research Content,The numeric code that describes that second type of accident collision event after the primary occurrence (diagram).
+TAS_ACCIDENT,TYPE_COLLISION_2_SHORT_DESCRIPTION,99a. Research Content,The text description that describes that second type of accident collision event after the primary occurrence (diagram).
+TAS_ACCIDENT,WEATHER,99a. Research Content,The numeric code that describes the weather condition at the time of the crash.
+TAS_ACCIDENT,WEATHER_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the weather condition at the time of the crash.
+TAS_ACCIDENT,ALCOHOL_INVOLVED,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+10 - Alcohol Involvement
+80 - Ability Impaired by Alcohol
+81 - Alcohol Suspected"
+TAS_ACCIDENT,DRUG_INVOLVED,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+15 - Drugs (Illegal)
+27 - Prescribed Medication
+82 - Ability Impaired by Drugs
+83 - Drugs Suspected
+84 - Ability Impaired by Medication"
+TAS_ACCIDENT,IMPAIRED_INVOLVED,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+10 - Alcohol Involvement
+15 - Drugs (Illegal)
+27 - Prescribed Medication
+80 - Ability Impaired by Alcohol
+81 - Alcohol Suspected
+82 - Ability Impaired by Drugs
+83 - Drugs Suspected
+84 - Ability Impaired by Medication"
+TAS_ACCIDENT,SPEED_INVOLVED,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+31 - Unsafe Speed (retired in 2004)
+35 - Exceeding Speed Limit
+36 - Excessive Speed over 40 km/h
+37 - Driving Too Fast for Conditions"
+TAS_ACCIDENT,EXCEEDING_SPEED,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+35 - Exceeding Speed Limit"
+TAS_ACCIDENT,EXCESSIVE_SPEED,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+36 - Excessive Speed over 40 km/h"
+TAS_ACCIDENT,DRIVING_TOO_FAST,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+37 - Driving Too Fast for Conditions"
+TAS_ACCIDENT,FELL_ASLEEP,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+19 - Fell Asleep"
+TAS_ACCIDENT,DISTRACTED_INVOLVED,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+34 - Use of Communication/Video Equipment
+85 - Driver Inattentive
+86 - Driver Internal/External Distraction"
+TAS_ACCIDENT,DRIVER_INATTENTIVE,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+85 - Driver Inattentive"
+TAS_ACCIDENT,DRIVER_INT_EXT_DISTRACTION,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+86 - Driver Internal/External Distraction"
+TAS_ACCIDENT,COMMUNICATION_VIDEO_EQUIPMENT,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+34 - Use of Communication/Video Equipment"
+TAS_ACCIDENT,DRIVING_WITHOUT_DUE_CARE,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+13 - Driving Without Due Care"
+TAS_ACCIDENT,HIGH_RISK_DRIVING,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+18 - Failing To Yield Right Of Way
+20 - Following Too Closely
+21 - Improper Passing
+29 - Ignoring Traffic Control Device
+31 - Unsafe Speed
+35 - Exceeding Speed Limit
+36 - Excessive Speed over0 km/h
+37 - Driving Too Fast for Conditions"
+TAS_ACCIDENT,ANIMAL_FLAG,99a. Research Content,"Identifies if the crash involved one or more entities with the following contributing factors:
+70 - Domestic Animal
+71 - Wild Animal"
+TAS_ENTITY,CHARGES_1,99a. Research Content,The alphabetic letter of the Act and the section number that describes the first of a maximum of three charges laid against the entity involved in the crash.
+TAS_ENTITY,BLOOD_ALCOHOL_CONTENT,99a. Research Content,"The Blood Alcohol Concentration (BAC) of the driver involved in the crash tested and analyzed from the breath or blood sample. BAC is measured in milligrams of alcohol per millilitres of blood.  For example, a reading of 80 is 80 milligrams of alcohol per 100 millilitres of blood."
+TAS_ENTITY,CHARGES_1_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the Act of the first of a maximum of three charges laid against the entity.
+TAS_ENTITY,CHARGES_2,99a. Research Content,The alphabetic letter of the Act and the section number that describes the second of a maximum of three charges laid against the entity involved in the crash.
+TAS_ENTITY,CHARGES_2_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the Act of the second of a maximum of three charges laid against the entity.
+TAS_ENTITY,CHARGES_3,99a. Research Content,The alphabetic letter of the Act and the section number that describes the third of a maximum of three charges laid against the entity involved in the crash.
+TAS_ENTITY,CHARGES_3_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the Act of the second of a maximum of three charges laid against the entity.
+TAS_ENTITY,CONTRIBUTING_FACTOR_1,99a. Research Content,The numeric code that describes the circumstances or events that the attending police officer perceives to directly contribute to a traffic collision. Up to four different contributing factors per entity are recorded.
+TAS_ENTITY,CONTRIBUTING_FACTOR_1_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the circumstances or events that the attending police officer perceives to directly contribute to a traffic collision. Up to four different contributing factors per entity are recorded.
+TAS_ENTITY,CONTRIBUTING_FACTOR_2,99a. Research Content,The numeric code that describes the circumstances or events that the attending police officer perceives to directly contribute to a traffic collision. Up to four different contributing factors per entity are recorded.
+TAS_ENTITY,CONTRIBUTING_FACTOR_2_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the circumstances or events that the attending police officer perceives to directly contribute to a traffic collision. Up to four different contributing factors per entity are recorded.
+TAS_ENTITY,CONTRIBUTING_FACTOR_3,99a. Research Content,The numeric code that describes the circumstances or events that the attending police officer perceives to directly contribute to a traffic collision. Up to four different contributing factors per entity are recorded.
+TAS_ENTITY,CONTRIBUTING_FACTOR_3_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the circumstances or events that the attending police officer perceives to directly contribute to a traffic collision. Up to four different contributing factors per entity are recorded.
+TAS_ENTITY,CONTRIBUTING_FACTOR_4,99a. Research Content,The numeric code that describes the circumstances or events that the attending police officer perceives to directly contribute to a traffic collision. Up to four different contributing factors per entity are recorded.
+TAS_ENTITY,CONTRIBUTING_FACTOR_4_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the circumstances or events that the attending police officer perceives to directly contribute to a traffic collision. Up to four different contributing factors per entity are recorded.
+TAS_ENTITY,DAMAGE_LOCATION,99a. Research Content,"The numeric identifier that identifies the location of damage on a vehicle, if applicable."
+TAS_ENTITY,DAMAGE_LOCATION_SHORT_DESCRIPTION,99a. Research Content,"The text description that identifies the location of damage on a vehicle, if applicable."
+TAS_ENTITY,DAMAGE_SEVERITY,99a. Research Content,A numeric code that describes the estimated level of damage as visible at the time of the crash.
+TAS_ENTITY,DAMAGE_SEVERITY_SHORT_DESCRIPTION,99a. Research Content,A text description that describes the estimated level of damage as visible at the time of the crash.
+TAS_ENTITY,DRIVER_LICENSE_JURISDICTION,99a. Research Content,The abbreviated description of the originating jurisdiction for a driver’s licence.
+TAS_ENTITY,DRIVER_LICENSE_JURISDICTION_SHORT_DESCRIPTION,99a. Research Content,The text description of the originating jurisdiction for a driver’s licence.
+TAS_ENTITY,ENTITY_NUMBER,99a. Research Content,The classification assigned to an entity used to categorize the type of entity.
+TAS_ENTITY,ENTITY_NUMBER_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the entity type in a crash.
+TAS_ENTITY,ENTITY_TYPE,99a. Research Content,"Vehicle, pedestrian, cyclist, or ‘other road vehicle’ involved in the crash."
+TAS_ENTITY,ENTITY_TYPE_SHORT_DESCRIPTION,99a. Research Content,"Vehicle, pedestrian, cyclist, or ‘other road vehicle’ involved in the crash."
+TAS_ENTITY,GENDER,99a. Research Content,The alphabetic letter that describes gender of the entity involved in the crash.
+TAS_ENTITY,GENDER_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the gender of the entity involved in the crash.
+TAS_ENTITY,LEARNER_CLASS,99a. Research Content,"The numeric class of the B.C. learner driver’s licence number for a driver in the crash, if applicable."
+TAS_ENTITY,LEARNER_CLASS_SHORT_DESCRIPTION,99a. Research Content,"The text description that describes the B.C. class of the learner driver’s licence number for a driver in the crash, if applicable."
+TAS_ENTITY,LICENSE_CLASS,99a. Research Content,The numeric class of the driver’s licence number for a driver in the crash.
+TAS_ENTITY,LICENSE_CLASS_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the class of the driver’s licence number for a driver in the crash.
+TAS_ENTITY,LICENSE_INDICATOR,99a. Research Content,"The alphabetic letter that indicates novice or new learner of the Licence Class, if applicable."
+TAS_ENTITY,LICENSE_INDICATOR_SHORT_DESCRIPTION,99a. Research Content,"The text description that indicates novice or new learner of the Licence Class, if applicable."
+TAS_ENTITY,POSSIBLE_OFFENDER_INDICATOR,99a. Research Content,"The numeric code that identifies whether the entity was at fault base on the attending police officer will assessment of the crash. This indicator indicates the officer’s decision, regardless of the ensuing legal and/or insurance results."
+TAS_ENTITY,OFFENDER_DESC,99a. Research Content,"The text description that identifies whether the entity was at fault base on the attending police officer will assessment of the crash. This indicator indicates the officer’s decision, regardless of the ensuing legal and/or insurance results."
+TAS_ENTITY,PRE_ACTION,99a. Research Content,The numeric code that describes the action of each vehicle immediately prior to first contact.
+TAS_ENTITY,PRE_ACTION_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the action of each vehicle immediately prior to first contact.
+TAS_ENTITY,STOLEN_VEHICLE,99a. Research Content,Indicates whether the vehicle was stolen.
+TAS_ENTITY,THIRD_TYPE_OF_COLLISION,99a. Research Content,"The numeric code that describes the type of impact, after the primary crash occurrence (diagram), when there is more than one injury or damage producing event in the crash. It is possible that one vehicle will have a third event while the other vehicle involved in the crash does not."
+TAS_ENTITY,THIRD_TYPE_OF_COLLISION_SHORT_DESCRIPTION,99a. Research Content,"The text description that describes that type of impact, after the primary crash occurrence (diagram), when there is more than one injury or damage producing event in the crash. It is possible that one vehicle will have a third event while the other vehicle involved in the crash does not."
+TAS_ENTITY,TOW_INDICATOR,99a. Research Content,"Indicates whether the vehicle was towed from the crash, if applicable."
+TAS_ENTITY,TRAVEL_DIRECTION,99a. Research Content,The alphabetic letter that describes the direction of travel of the vehicle or if the vehicle was parked.
+TAS_ENTITY,TRAVEL_DIRECTION_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the direction of travel or parked vehicle.
+TAS_ENTITY,VEHICLE_JURISDICTION,99a. Research Content,"The originating jurisdiction of the vehicle licence plate, if applicable."
+TAS_ENTITY,VEHICLE_MAKE,99a. Research Content,"The vehicle make as shown on registration documents, if applicable."
+TAS_ENTITY,VEHICLE_STYLE,99a. Research Content,"The vehicle body style as shown on registration documents, if applicable."
+TAS_ENTITY,VEHICLE_TYPE,99a. Research Content,The numeric code that describes the type of vehicle involved in the crash.
+TAS_ENTITY,VEHICLE_TYPE_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the type of vehicle involved in the crash.
+TAS_ENTITY,VEHICLE_USE,99a. Research Content,The numeric code that describes the vehicle use at the time of the crash.
+TAS_ENTITY,VEHICLE_USE_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the vehicle's use at the time of the crash.
+TAS_ENTITY,VEHICLE_YEAR,99a. Research Content,The vehicle model year as shown on registration documents.
+TAS_VICTIM,AGE_RANGE,99a. Research Content,"The age of the individual involved at the time of the crash, categorized by:
+00-03
+04-07
+08-12
+13-15
+16-18
+19-21
+22-25
+26-35 
+36-45
+46-55
+56-65
+66-75
+76-85
+86+
+Unknown"
+TAS_VICTIM,ENTITY_NUMBER,99a. Research Content,The classification assigned to an entity used to categorize the type of entity.
+TAS_VICTIM,GENDER,99a. Research Content,The alphabetic letter that describes gender of the entity involved in the crash.
+TAS_VICTIM,INJURY_CLASS,99a. Research Content,The numeric code that describes the extent of the injuries.
+TAS_VICTIM,INJURY_CLASS_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the extent of the injuries.
+TAS_VICTIM,INJURY_LOCATION,99a. Research Content,"The numeric code that describes location of the most severe, obvious injury."
+TAS_VICTIM,INJURY_LOCATION_SHORT_DESCRIPTION,99a. Research Content,"The text description that describes location of the most severe, obvious injury."
+TAS_VICTIM,INJURY_TYPE,99a. Research Content,"The numeric code that describes the physical injury sustained. If the victim suffers multiple injuries, the most severe type of injury is recorded."
+TAS_VICTIM,INJURY_TYPE_SHORT_DESCRIPTION,99a. Research Content,"The text description that describes the physical injury sustained. If the victim suffers multiple injuries, the most severe type of injury is recorded."
+TAS_VICTIM,OCCUPANT_EJECTED_INDICATOR,99a. Research Content,The numeric code that identifies whether the vehicle occupant was ejected or partially ejected from vehicle.
+TAS_VICTIM,OCCUPANT_EJECTED_INDICATOR_SHORT_DESCRIPTION,99a. Research Content,The text description that identifies whether the vehicle occupant was ejected or partially ejected from vehicle.
+TAS_VICTIM,PASSENGER_POSITION,99a. Research Content,The numeric code that describes the position of drivers and passengers in/on vehicle or bicycle.
+TAS_VICTIM,PASSENGER_POSITION_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the position of drivers and passengers in/on vehicle or bicycle.
+TAS_VICTIM,POSITION_SEQUENCE,99a. Research Content,"The numeric sequence (in relation to the victim's position) in cases where two people were in the same passenger position. For example, more than one person in cargo area."
+TAS_VICTIM,POSITION_SEQUENCE_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the position of drivers and passengers in/on vehicle or bicycle.
+TAS_VICTIM,SAFETY_EQUIPMENT,99a. Research Content,The numeric code that describes the type of safety equipment used by the persons involved.
+TAS_VICTIM,SAFETY_EQUIPMENT_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the type of safety equipment used by the persons involved.
+TAS_VICTIM,TAKEN_BY,99a. Research Content,The abbreviated description of the injured person’s mode of transportation away from the crash.
+TAS_VICTIM,TAKEN_BY_SHORT_DESCRIPTION,99a. Research Content,The text description of the injured person’s mode of transportation away from the crash.
+TAS_VICTIM,TAKEN_TO,99a. Research Content,The abbreviated description of the location the injured person's was taken to.
+TAS_VICTIM,TAKEN_TO_SHORT_DESCRIPTION,99a. Research Content,The text description of the location the injured person's was taken to.
+TAS_VICTIM,VICTIM_STATUS,99a. Research Content,The numeric code that describes the overall condition of the injured person. This field is used to identify if the victim was deceased.
+TAS_VICTIM,VICTIM_STATUS_SHORT_DESCRIPTION,99a. Research Content,The text description that describes the overall condition of the injured person. This field is used to identify if the victim was deceased.
+TAS_ACCIDENT,ACCIDENT_NUMBER,3c. Direct Identifier Internal – replaced,Unique identifier of a collision report.
+TAS_ACCIDENT,BLOCK_NUMBER,6b. Strong Indirect Identifier - excluded,"The house, building, or lot number contained within the block or street address at which the entity was situated at the time of the crash."
+TAS_ACCIDENT,STREET_NAME,6b. Strong Indirect Identifier - excluded,"The name of the street, thoroughfare or road infrastructure component where the crash occurred."
+TAS_ACCIDENT,ACC_STREET_FULL_NAME,6b. Strong Indirect Identifier - excluded,The full name and type of the road infrastructure component where the crash occurred.
+TAS_ACCIDENT,CROSS_STREET_NAME,6b. Strong Indirect Identifier - excluded,"The name of the nearest cross-street, thoroughfare or road infrastructure component where the crash occurred."
+TAS_ACCIDENT,ACC_CROSS_STREET_FULL_NAME,6b. Strong Indirect Identifier - excluded,"The full name and type of the nearest cross-street, thoroughfare or road infrastructure component where the crash occurred."
+TAS_ACCIDENT,LKI_HWY_KM_OFFSET_DIST,6b. Strong Indirect Identifier - excluded,The highway portion of the Location Code (LKI). The route or highway number as defined by the Ministry of Transportation and Infrastructure (MoTI).
+TAS_ACCIDENT,LKI_HWY_ROUTE_NUMBER,6b. Strong Indirect Identifier - excluded,"The highway portion of the Location Code (LKI). The route or highway number as defined by the Ministry of Transportation and Infrastructure (MoTI).
+
+The LKI is comprised of three data entry fields which are a location on BC provincial highways in reference to a defined Inventory of Landmarks:
+• Route
+• Segment
+• Offset"
+TAS_ACCIDENT,LKI_HWY_SEGMENT_NUMBER,6b. Strong Indirect Identifier - excluded,"The highway portion of the Location Code (LKI). The route or highway number as defined by the Ministry of Transportation and Infrastructure (MoTI).
+
+The LKI is comprised of three data entry fields which are a location on BC provincial highways in reference to a defined Inventory of Landmarks:
+• Route
+• Segment
+• Offset"
+TAS_ACCIDENT,ACC_ROAD_LOCATION_DESCRIPTION,6b. Strong Indirect Identifier - excluded,The full address or street name and cross street where the crash occurred.
+TAS_ENTITY,ACCIDENT_NUMBER,3c. Direct Identifier Internal – replaced,Unique identifier of a collision report.
+TAS_ENTITY,DRIVER_LICENSE_NUMBER,3b. Direct Identifier External– replaced,"The driver’s licence number for the entity involved in the crash, if available."
+TAS_ENTITY,NAME,3a. Direct Identifier - excluded,"The last and first name of the entity, separated by a comma."
+TAS_ENTITY,PLATE_NUMBER,3c. Direct Identifier Internal – replaced,The vehicle license plate of vehicle entity.
+TAS_ENTITY,VEHICLE_REGISTRATION_NUMBER,3c. Direct Identifier Internal – replaced,"The vehicle registration number as shown on registration documents, if applicable."
+TAS_VICTIM,ACCIDENT_NUMBER,3c. Direct Identifier Internal – replaced,Unique identifier of a collision report.
+TAS_VICTIM,AGE,6b. Strong Indirect Identifier - excluded,The age of the individual involved at the time of the crash. Newborn to two years of age are recorded as one year of age.
+TAS_VICTIM,VICTIM_NAME,3a. Direct Identifier - excluded,"The last and first name of the victim, separated by a comma."
+TAS_ACCIDENT,SNAPSHOT_DATE,99a. Research Content,The date the data was captured.
+TAS_ACCIDENT,ACCIDENT_DATE,6c. Strong Indirect Identifier - modified,"Date of crash. (e.g., 1/31/2019)"
+TAS_ACCIDENT,LATITUDE,6b. Strong Indirect Identifier - excluded,The geographic coordinate that specifies the east - west position of the crash location.
+TAS_ACCIDENT,LONGITUDE,6b. Strong Indirect Identifier - excluded,The geographic coordinate that specifies the north–south position of the crash location.
+TAS_ACCIDENT,TOTAL_VEHICLES_INVOLVED,99a. Research Content,"The count of vehicles, including bicycles, involved in the crash."
+TAS_ACCIDENT,TOTAL_INJURED,99a. Research Content,The count of people injured in the crash.
+TAS_ACCIDENT,TOTAL_KILLED,99a. Research Content,The count of people killed in the crash. Fatal victim refers to a road user who died within 30 days after the date when an injury was sustained in the crash involving at least one motor vehicle.
+TAS_ACCIDENT,DATA_YR,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_ACCIDENT,VERSION_ID,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_ACCIDENT,SEQNO,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_ENTITY,SNAPSHOT_DATE,99a. Research Content,The date the data was captured.
+TAS_ENTITY,BIRTH_DATE,6c. Strong Indirect Identifier - modified,The entity's date of birth.
+TAS_ENTITY,DATA_YR,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_ENTITY,VERSION_ID,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_ENTITY,SEQNO,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_ENTITY,STUDYID,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_VICTIM,SNAPSHOT_DATE,99a. Research Content,The date the data was captured.
+TAS_VICTIM,DATE_OF_DEATH,6c. Strong Indirect Identifier - modified,"Indicates the date of which the victim died, if applicable."
+TAS_VICTIM,DATA_YR,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_VICTIM,VERSION_ID,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_VICTIM,SEQNO,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+TAS_VICTIM,STUDYID,99c. Popdata Variables (internal use),Internal information added for administrative purposes
+
+
+
+
+
+

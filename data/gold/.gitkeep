@@ -1,0 +1,15 @@
+# Gold Layer - Star Schema
+# This directory contains the final business-ready data model:
+# - Dimension tables (dim_time, dim_location, dim_vehicle, dim_factor)
+# - Fact table (fact_collisions)
+# - ICBC-aligned view (icbc_view) with TAS naming conventions
+#
+# Star Schema Benefits:
+# - Fast analytical queries
+# - Easy to understand business model
+# - Optimized for BI tools (Tableau, Power BI)
+# - Surrogate keys enable efficient joins
+
+
+
+

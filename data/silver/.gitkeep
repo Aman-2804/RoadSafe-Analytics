@@ -1,0 +1,12 @@
+# Silver Layer
+# This directory contains cleaned and normalized data ready for analytics.
+# Silver layer transformations include:
+# - Date/time parsing and normalization
+# - String trimming and null handling
+# - Data quality filters (valid coordinates, non-null dates)
+# - Column renaming for consistency
+# - Stable ID generation
+
+
+
+

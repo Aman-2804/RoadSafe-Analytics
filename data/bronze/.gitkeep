@@ -1,0 +1,7 @@
+# Bronze Layer
+# This directory contains raw data standardized into Parquet format.
+# Bronze is the first layer in the data lake medallion architecture:
+# - Raw data is read from data/raw/
+# - Standardized and written as Parquet to data/bronze/
+# - Parquet provides: columnar storage, compression, type safety, and splittable files
+

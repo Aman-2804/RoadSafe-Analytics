@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data artifacts (keep directory placeholders)
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# Spark output / parquet
+*.parquet
+*.snappy.parquet
+*.crc
+
+

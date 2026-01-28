@@ -1,0 +1,47 @@
+services:
+  spark:
+    image: apache/spark:3.5.0
+    container_name: roadsafe-spark
+    volumes:
+      - ./:/workspace
+      - ./.bashrc:/home/spark/.bashrc
+    working_dir: /workspace
+    ports:
+      - "4040:4040"   # Spark UI for jobs
+      - "7077:7077"   # Spark master port
+      - "8080:8080"   # Spark master web UI
+    command: >
+      bash -c "
+      /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+      --host 0.0.0.0
+      --port 7077
+      --webui-port 8080
+      "
+    environment:
+      - SPARK_MASTER_HOST=spark
+      - PATH=/opt/spark/bin:/opt/spark/sbin:$PATH
+      - PYTHONPATH=/workspace/.pip-packages:/workspace
+
+  spark-worker:
+    image: apache/spark:3.5.0
+    container_name: roadsafe-spark-worker
+    volumes:
+      - ./:/workspace
+      - ./.bashrc:/home/spark/.bashrc
+    working_dir: /workspace
+    ports:
+      - "8081:8081"   # Worker web UI
+    depends_on:
+      - spark
+    command: >
+      bash -c "
+      /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker
+      spark://spark:7077
+      --webui-port 8081
+      "
+    environment:
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=2g
+      - PATH=/opt/spark/bin:/opt/spark/sbin:$PATH
+      - PYTHONPATH=/workspace/.pip-packages:/workspace
+

@@ -147,62 +147,9 @@ roadsafe-analytics/
    # http://localhost:8000/dashboards/04_severity_analysis.html
    ```
 
-## Architecture
-
-### Data Lake Layers
-
-**Bronze Layer** (`data/bronze/`)
-- Raw data ingested from CSV
-- Schema-enforced Parquet format
-- Preserves original data structure
-- Fast columnar storage for downstream processing
-
-**Silver Layer** (`data/silver/`)
-- Cleaned and normalized data
-- Date/time parsing and validation
-- Coordinate filtering (preserves injury data)
-- String normalization and null handling
-- Snake_case column naming
-
-**Gold Layer** (`data/gold/`)
-- Star schema dimensional model
-- Dimension tables: `dim_time`, `dim_location`, `dim_vehicle`, `dim_factor`
-- Fact tables: `fact_collisions`, `fact_claims`
-- Surrogate keys for referential integrity
-- Optimized for SQL analytics
-
-### Key Design Decisions
-
-#### Preserving Critical Data During Filtering
-
-**Problem**: Initial Silver layer transformation filtered out rows without valid coordinates. However, rows with injuries/fatalities often had NULL coordinates, causing all injury data to be lost.
-
-**Solution**: Modified the coordinate filter to use an OR condition:
-- Keep rows with valid NYC coordinates (for mapping/geospatial analysis)
-- **OR** keep rows with injuries/fatalities (even if coordinates are missing)
-
-This ensures we don't lose critical safety data while still filtering invalid coordinates for geospatial queries. This demonstrates a common data engineering challenge: balancing data quality filters with preserving important business metrics.
-
-```python
-# Before: Lost all injury data
-df.filter(coords_valid)
-
-# After: Preserves injury data
-df.filter(coords_valid | has_injuries_or_fatalities)
-```
-
-**Impact**: This fix preserved 4,641 injury records and 5,320 fatality records that would have been lost otherwise.
-
 ## Data Quality Tests
 
-The pipeline includes 19 automated data quality tests covering:
-
-- **Completeness**: No null collision IDs
-- **Validity**: No negative injury counts
-- **Uniqueness**: Dimension keys are unique
-- **Referential Integrity**: Foreign keys exist in dimension tables
-- **Consistency**: Row counts between layers are reasonable
-- **Business Rules**: Severity categories are valid
+The pipeline includes automated data quality tests covering:
 
 Run tests:
 ```bash
@@ -211,7 +158,7 @@ docker compose exec spark bash -c "cd /workspace && spark-submit --master spark:
 
 ## SQL Analytics
 
-The project includes 19 pre-built SQL queries covering:
+The project includes pre-built SQL queries covering:
 
 - Top collision hotspots by location
 - Worst hours and days for collisions
@@ -296,11 +243,6 @@ docker compose logs spark
 docker compose logs spark-worker
 ```
 
-## Requirements
-
-- Docker Desktop (or Docker Engine + Docker Compose)
-- 4GB+ RAM available
-- 10GB+ disk space for data
 
 ## License
 
@@ -308,6 +250,3 @@ MIT
 
 ---
 
-**Built for demonstrating enterprise data engineering practices**
-
-*For questions or issues, please refer to the documentation or open an issue.*

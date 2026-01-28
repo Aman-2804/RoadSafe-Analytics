@@ -1,23 +1,16 @@
 # RoadSafe Analytics 🚗💥📊
 
-**RoadSafe Analytics** is a comprehensive data engineering pipeline for traffic collision analysis built with **Apache Spark, Docker, and Python**.
-
-The system ingests raw NYC motor vehicle collision data, applies enterprise-grade data quality transformations, builds a star schema data warehouse, generates synthetic insurance claims, and serves interactive dashboards and SQL analytics.
-
-## What is this?
-
-RoadSafe Analytics processes millions of collision records through a multi-layered data lake architecture (Bronze → Silver → Gold), ensuring data quality while preserving critical safety metrics. The pipeline transforms raw CSV data into queryable Parquet files, builds dimensional models for analytics, and generates interactive visualizations.
-
-Perfect for demonstrating enterprise data engineering practices, including schema enforcement, data quality testing, and dimensional modeling.
+**RoadSafe Analytics** is a data engineering pipeline for traffic collision analysis built with **Apache Spark, Docker, and Python**.
+It processes millions of collision records (Motor Vehicle Collisions - Crashes in NYC) through a multi-layered data lake architecture (Bronze → Silver → Gold), ensuring data quality while preserving critical safety metrics. The pipeline transforms raw CSV data into queryable Parquet files, builds dimensional models for analytics using SQL, generates synthetic insurance claims and interactive visualizations.
 
 ## What can it do?
 
 ✨ **Data Pipeline** - Multi-layer ETL from raw CSV to analytics-ready star schema  
 📊 **Interactive Dashboards** - Collision hotspots, time trends, severity analysis, and claims insights  
 🔍 **SQL Analytics** - 19 pre-built queries for business intelligence  
+📈 **ICBC Alignment** - Data structures aligned with ICBC Traffic Accident System standards
 ⚡ **Data Quality** - Automated tests ensuring data integrity across layers  
 🏗️ **Dimensional Modeling** - Star schema with fact and dimension tables  
-📈 **ICBC Alignment** - Data structures aligned with ICBC Traffic Accident System standards
 
 ## Technologies Used
 
@@ -32,42 +25,42 @@ Perfect for demonstrating enterprise data engineering practices, including schem
 
 ```
 roadsafe-analytics/
-├── spark/                      # ETL pipeline scripts
-│   ├── 01_ingest_raw.py       # Bronze layer: CSV → Parquet
-│   ├── 02_clean_silver.py     # Silver layer: Data cleaning & normalization
-│   ├── 03_build_gold.py       # Gold layer: Star schema construction
-│   ├── 04_build_icbc_view.py  # ICBC-aligned presentation layer
-│   ├── 05_generate_claims.py  # Synthetic insurance claims generation
+├── spark/                       # ETL pipeline scripts
+│   ├── 01_ingest_raw.py         # Bronze layer: CSV → Parquet
+│   ├── 02_clean_silver.py       # Silver layer: Data cleaning & normalization
+│   ├── 03_build_gold.py         # Gold layer: Star schema construction
+│   ├── 04_build_icbc_view.py    # ICBC TAS aligned presentation layer
+│   ├── 05_generate_claims.py    # Synthetic insurance claims generation
 │   ├── 06_data_quality_tests.py # Data quality validation suite
-│   ├── 07_create_dashboards.py # Dashboard generation
-│   ├── run_sql.py              # SQL query execution engine
-│   └── schemas.py              # Schema definitions
-├── sql/                        # Analytics queries
-│   └── analytics.sql          # 19 pre-built SQL queries
-├── dashboards/                 # Generated HTML dashboards
-│   ├── 00_summary.html        # Executive summary dashboard
+│   ├── 07_create_dashboards.py  # Dashboard generation
+│   ├── run_sql.py               # SQL query execution engine
+│   └── schemas.py               # Schema definitions
+├── sql/                         # Analytics queries
+│   └── analytics.sql            # 19 pre-built SQL queries
+├── dashboards/                  # Generated HTML dashboards
+│   ├── 00_summary.html          # Executive summary dashboard
 │   ├── 01_collision_hotspots.html
 │   ├── 02_time_trends.html
 │   ├── 03_claims_analysis.html
 │   ├── 04_severity_analysis.html
 │   └── 05_contributing_factors.html
-├── data/                       # Data lake layers
-│   ├── raw/                   # Source CSV files
-│   ├── bronze/                # Raw Parquet (schema-enforced)
-│   ├── silver/                # Cleaned & normalized data
-│   └── gold/                  # Star schema tables
+├── data/                        # Data lake layers
+│   ├── raw/                     # Source CSV files
+│   ├── bronze/                  # Raw Parquet (schema-enforced)
+│   ├── silver/                  # Cleaned & normalized data
+│   └── gold/                    # Star schema tables
 │       ├── dim_time/
 │       ├── dim_location/
 │       ├── dim_vehicle/
 │       ├── dim_factor/
 │       ├── fact_collisions/
 │       └── fact_claims/
-├── docs/                       # Documentation
-│   └── icbc_tas_reference/   # ICBC reference data
-├── docker-compose.yml         # Spark cluster configuration
-├── .bashrc                     # Container environment setup
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
+├── docs/                        # Documentation
+│   └── icbc_tas_reference/      # ICBC reference data
+├── docker-compose.yml           # Spark cluster configuration
+├── .bashrc                      # Container environment setup
+├── requirements.txt             # Python dependencies
+└── README.md                  
 ```
 
 ## Quick Start
@@ -147,7 +140,11 @@ roadsafe-analytics/
    Open `dashboards/00_summary.html` in your browser, or serve locally:
    ```bash
    python3 -m http.server 8000
-   # Then visit http://localhost:8000/dashboards/00_summary.html
+   # Then visit:
+   # http://localhost:8000/dashboards/00_summary.html
+   # http://localhost:8000/dashboards/01_collision_hotspots.html
+   # http://localhost:8000/dashboards/02_time_trends.html
+   # http://localhost:8000/dashboards/04_severity_analysis.html
    ```
 
 ## Architecture

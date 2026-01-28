@@ -98,7 +98,17 @@ roadsafe-analytics/
    
    Wait for services to start (check with `docker compose ps`).
 
-4. **Run the pipeline**
+4. **Install Python dependencies inside the Spark container (first run only)**
+
+   The base Spark image does not include libraries like `plotly`, `numpy`, or `pandas`.  
+   Install all required Python packages into `/workspace/.pip-packages` (already on `PYTHONPATH`):
+
+   ```bash
+   docker compose exec spark bash -c \
+     "cd /workspace && pip install --no-cache-dir --target /workspace/.pip-packages -r requirements.txt"
+   ```
+
+5. **Run the pipeline**
    
    Execute each stage sequentially:
    ```bash
@@ -118,24 +128,24 @@ roadsafe-analytics/
    docker compose exec spark bash -c "cd /workspace && spark-submit --master spark://localhost:7077 spark/05_generate_claims.py"
    ```
 
-5. **Run data quality tests**
+6. **Run data quality tests**
    ```bash
    docker compose exec spark bash -c "cd /workspace && spark-submit --master spark://localhost:7077 spark/06_data_quality_tests.py"
    ```
 
-6. **Generate dashboards**
+7. **Generate dashboards**
    ```bash
    docker compose exec spark bash -c "cd /workspace && spark-submit --master spark://localhost:7077 spark/07_create_dashboards.py"
    ```
    
    Dashboards will be generated in the `dashboards/` directory.
 
-7. **Run SQL analytics**
+8. **Run SQL analytics**
    ```bash
    docker compose exec spark bash -c "cd /workspace && spark-submit --master spark://localhost:7077 spark/run_sql.py sql/analytics.sql"
    ```
 
-8. **View dashboards**
+9. **View dashboards**
    
    Open `dashboards/00_summary.html` in your browser, or serve locally:
    ```bash

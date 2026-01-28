@@ -2,10 +2,17 @@
 __pycache__/
 *.pyc
 
-# Data artifacts (keep directory placeholders)
+# Data artifacts
+# - Keep folder structure in git via .gitkeep
+# - Allow tracking small helper files in data/raw (README, checksums, samples)
 data/**
 !data/**/
 !data/**/.gitkeep
+
+# Keep raw directory visible/tracked, but do not commit large raw datasets
+!data/raw/
+!data/raw/**
+data/raw/*.csv
 
 # Spark output / parquet
 *.parquet

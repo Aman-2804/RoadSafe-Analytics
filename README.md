@@ -86,12 +86,17 @@ roadsafe-analytics/
    cd roadsafe-analytics
    ```
 
-2. **Ensure data file exists**
-   
-   Place your NYC motor vehicle collisions CSV file at:
+2. **Download the raw dataset (required)**
+
+   The raw CSV is intentionally **not** committed to git (it’s too large for GitHub). Download it from NYC Open Data and save it to `data/raw/`:
+
+   ```bash
+   mkdir -p data/raw
+   curl -L "https://data.cityofnewyork.us/api/views/h9gi-nx95/rows.csv?accessType=DOWNLOAD" \
+     -o data/raw/nyc_motor_vehicle_collisions.csv
    ```
-   data/raw/nyc_motor_vehicle_collisions.csv
-   ```
+
+   Dataset reference: `https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data`
 
 3. **Start Spark cluster**
    ```bash

@@ -2,6 +2,16 @@
 
 ## Simple Commands (No Full Paths Needed!)
 
+### 0. Download the raw dataset (required)
+
+The raw CSV is intentionally **not** committed to git (it’s too large for GitHub). Download it from NYC Open Data and save it to `data/raw/`:
+
+```bash
+mkdir -p data/raw
+curl -L "https://data.cityofnewyork.us/api/views/h9gi-nx95/rows.csv?accessType=DOWNLOAD" \
+  -o data/raw/nyc_motor_vehicle_collisions.csv
+```
+
 ### 1. Start Spark Container + Enter It
 
 ```bash

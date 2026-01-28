@@ -1,4 +1,4 @@
-# RoadSafe Analytics 🚗💥📊
+# RoadSafe Analytics 🚗📊
 
 **RoadSafe Analytics** is a data engineering pipeline for traffic collision analysis built with **Apache Spark, Docker, and Python**.
 It processes millions of collision records (Motor Vehicle Collisions - Crashes in NYC) through a multi-layered data lake architecture (Bronze → Silver → Gold), ensuring data quality while preserving critical safety metrics. The pipeline transforms raw CSV data into queryable Parquet files, builds dimensional models for analytics using SQL, generates synthetic insurance claims and interactive visualizations.

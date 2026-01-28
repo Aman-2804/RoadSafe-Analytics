@@ -9,7 +9,6 @@ It processes millions of collision records (Motor Vehicle Collisions - Crashes i
 📊 **Interactive Dashboards** - Collision hotspots, time trends, severity analysis, and claims insights  
 🔍 **SQL Analytics** - 19 pre-built queries for business intelligence  
 📈 **ICBC Alignment** - Data structures aligned with ICBC Traffic Accident System standards
-
 ⚡ **Data Quality** - Automated tests ensuring data integrity across layers  
 🏗️ **Dimensional Modeling** - Star schema with fact and dimension tables  
 

@@ -155,6 +155,7 @@ roadsafe-analytics/
    open dashboards/02_time_trends.html
    open dashboards/03_claims_analysis.html
    open dashboards/04_severity_analysis.html
+   open dashboards/05_contributing_factors.html
    ```
 
 ## Data Quality Tests

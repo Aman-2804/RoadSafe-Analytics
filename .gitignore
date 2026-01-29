@@ -19,6 +19,9 @@ data/raw/*.csv
 *.snappy.parquet
 *.crc
 
+# Local Python packages inside container
+.pip-packages/
+
 # Local notes / scratch docs (do not commit)
 history.md
 QUICK_START.md

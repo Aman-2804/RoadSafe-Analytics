@@ -142,11 +142,17 @@ roadsafe-analytics/
    Dashboards will be generated in the `dashboards/` directory.
 
 8. **Run SQL analytics**
+   - Top collision hotspots by location
+   - Worst hours and days for collisions
+   - Monthly and yearly trends
+   - Claim amounts by borough and severity
+   - Contributing factors analysis
+   - Vehicle type distributions
    ```bash
    docker compose exec spark bash -c "cd /workspace && spark-submit --master spark://localhost:7077 spark/run_sql.py sql/analytics.sql"
    ```
 
-9. **View dashboards**
+10. **View dashboards**
    
    Open the generated HTML dashboards directly in your browser:
    ```bash
@@ -157,31 +163,6 @@ roadsafe-analytics/
    open dashboards/04_severity_analysis.html
    open dashboards/05_contributing_factors.html
    ```
-
-## Data Quality Tests
-
-The pipeline includes automated data quality tests covering:
-
-Run tests:
-```bash
-docker compose exec spark bash -c "cd /workspace && spark-submit --master spark://localhost:7077 spark/06_data_quality_tests.py"
-```
-
-## SQL Analytics
-
-The project includes pre-built SQL queries covering:
-
-- Top collision hotspots by location
-- Worst hours and days for collisions
-- Monthly and yearly trends
-- Claim amounts by borough and severity
-- Contributing factors analysis
-- Vehicle type distributions
-
-Execute all queries:
-```bash
-docker compose exec spark bash -c "cd /workspace && spark-submit --master spark://localhost:7077 spark/run_sql.py sql/analytics.sql"
-```
 
 ## Dashboards
 

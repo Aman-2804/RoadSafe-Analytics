@@ -100,7 +100,7 @@ roadsafe-analytics/
    docker compose up -d
    ```
    
-   Wait for services to start (check with `docker compose ps`).
+   (check with `docker compose ps`).
 
 4. **Install Python dependencies inside the Spark container (first run only)**
 

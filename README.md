@@ -148,6 +148,7 @@ roadsafe-analytics/
    - Claim amounts by borough and severity
    - Contributing factors analysis
    - Vehicle type distributions
+     
    ```bash
    docker compose exec spark bash -c "cd /workspace && spark-submit --master spark://localhost:7077 spark/run_sql.py sql/analytics.sql"
    ```
@@ -163,25 +164,11 @@ roadsafe-analytics/
    open dashboards/04_severity_analysis.html
    open dashboards/05_contributing_factors.html
    ```
+ <p align="center">
+  <img src="https://github.com/user-attachments/assets/9a102b79-9965-450c-a253-41683b45e769" width="45%" />
+  <img src="https://github.com/user-attachments/assets/9a102b79-9965-450c-a253-41683b45e769" width="45%" />
+</p>
 
-## Dashboards
-
-Interactive HTML dashboards generated using Plotly:
-
-- **Summary Dashboard** - Key metrics and KPIs
-- **Collision Hotspots** - Geographic visualization of high-incident areas
-- **Time Trends** - Temporal patterns and seasonality
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/9a102b79-9965-450c-a253-41683b45e769" width="70%" />
-  </p>
-- **Claims Analysis** - Insurance claims insights
-- **Severity Analysis** - Injury and fatality breakdowns
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/9a102b79-9965-450c-a253-41683b45e769" width="70%" />
-  </p>
-- **Contributing Factors** - Root cause analysis
-
-All dashboards are self-contained HTML files requiring no server.
 
 ## Development
 

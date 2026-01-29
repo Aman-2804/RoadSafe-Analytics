@@ -6,7 +6,6 @@ It processes millions of collision records (Motor Vehicle Collisions - Crashes i
 <img width="1323" height="277" alt="Screenshot 2026-01-28 at 4 12 47 PM" src="https://github.com/user-attachments/assets/a366da53-973d-4806-9579-5a8bedb47ad0" />
 <img width="1227" height="610" alt="Screenshot 2026-01-28 at 4 12 27 PM" src="https://github.com/user-attachments/assets/b7970b42-c051-4520-a7a0-06fa887008f0" />
 
-
 ## What can it do?
 
 ✨ **Data Pipeline** - Multi-layer ETL from raw CSV to analytics-ready star schema  
@@ -166,7 +165,7 @@ roadsafe-analytics/
    ```
  <p align="center">
   <img src="https://github.com/user-attachments/assets/9a102b79-9965-450c-a253-41683b45e769" width="45%" />
-  <img src="https://github.com/user-attachments/assets/9a102b79-9965-450c-a253-41683b45e769" width="45%" />
+  <img src="https://github.com/user-attachments/assets/da8a8e94-9eb9-4c27-b2f9-ce73da709811" width="45%"/>
 </p>
 
 

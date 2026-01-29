@@ -100,9 +100,6 @@ roadsafe-analytics/
 
 4. **Install Python dependencies inside the Spark container (first run only)**
 
-   The base Spark image does not include libraries like `plotly`, `numpy`, or `pandas`.  
-   Install all required Python packages into `/workspace/.pip-packages` (already on `PYTHONPATH`):
-
    ```bash
    docker compose exec spark bash -c \
      "cd /workspace && pip install --no-cache-dir --target /workspace/.pip-packages -r requirements.txt"
@@ -147,14 +144,12 @@ roadsafe-analytics/
 
 9. **View dashboards**
    
-   Open `dashboards/00_summary.html` in your browser, or serve locally:
+   Open the generated HTML dashboards directly in your browser:
    ```bash
-   python3 -m http.server 8000
-   # Then visit:
-   # http://localhost:8000/dashboards/00_summary.html
-   # http://localhost:8000/dashboards/01_collision_hotspots.html
-   # http://localhost:8000/dashboards/02_time_trends.html
-   # http://localhost:8000/dashboards/04_severity_analysis.html
+   open dashboards/00_summary.html
+   open dashboards/01_collision_hotspots.html
+   open dashboards/02_time_trends.html
+   open dashboards/04_severity_analysis.html
    ```
 
 ## Data Quality Tests

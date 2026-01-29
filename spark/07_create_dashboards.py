@@ -206,6 +206,15 @@ def create_claims_dashboard(tables):
     """Create claims analysis visualizations"""
     print("\n=== Creating Claims Dashboard ===")
     
+    # Check if fact_claims has data
+    claims_count = tables['fact_claims'].count()
+    if claims_count == 0:
+        fig = go.Figure()
+        fig.add_annotation(text="No claims data available. Run spark/05_generate_claims.py first.", 
+                          xref="paper", yref="paper", x=0.5, y=0.5)
+        fig.update_layout(title="Claims Analysis Dashboard", height=600)
+        return fig
+    
     # Claims by borough
     borough_claims_df = (tables['fact_claims']
                         .join(tables['fact_collisions'], "collision_id")
@@ -372,13 +381,20 @@ def create_contributing_factors_dashboard(tables):
     
     factors_pd = spark_to_pandas(factors_df)
     
+    if len(factors_pd) == 0:
+        fig = go.Figure()
+        fig.add_annotation(text="No contributing factors data available.", 
+                          xref="paper", yref="paper", x=0.5, y=0.5)
+        fig.update_layout(title="Top 15 Contributing Factors", height=600)
+        return fig
+    
     # Create horizontal bar chart
     fig = go.Figure()
     
     fig.add_trace(
         go.Bar(
             x=factors_pd['collision_count'],
-            y=factors_pd['factor_description'],
+            y=factors_pd['contributing_factor'],
             orientation='h',
             marker_color='indianred'
         )

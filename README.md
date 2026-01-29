@@ -190,8 +190,14 @@ Interactive HTML dashboards generated using Plotly:
 - **Summary Dashboard** - Key metrics and KPIs
 - **Collision Hotspots** - Geographic visualization of high-incident areas
 - **Time Trends** - Temporal patterns and seasonality
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/9a102b79-9965-450c-a253-41683b45e769" width="70%" />
+  </p>
 - **Claims Analysis** - Insurance claims insights
 - **Severity Analysis** - Injury and fatality breakdowns
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/9a102b79-9965-450c-a253-41683b45e769" width="70%" />
+  </p>
 - **Contributing Factors** - Root cause analysis
 
 All dashboards are self-contained HTML files requiring no server.
